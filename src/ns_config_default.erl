@@ -207,7 +207,7 @@ default() ->
          "-B", "binary",
          "-r",
          "-c", "10000",
-         "-e", {"admin=~s;default_bucket_name=default;auto_create=false",
+         "-e", {"admin=~s;default_bucket_name=default;auto_create=false;lua_file=./tmp/ext.lua",
                 [admin_user]},
          {"~s", [verbosity]}
         ],
